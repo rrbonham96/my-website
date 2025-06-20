@@ -3,7 +3,6 @@
     justify-content: center;
 }
 
-
 body {
     max-width: 45%;
     margin-left: auto;
@@ -14,4 +13,21 @@ body {
 
 address ul {
     list-style: none;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+nav ul {
+    list-style: none;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+nav ul > li {
+    display: inline;
+    font-size: large;
+}
+
+main p {
+    line-height: 20px;
 }
