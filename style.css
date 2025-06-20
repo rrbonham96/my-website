@@ -4,7 +4,7 @@
 }
 
 body {
-    max-width: 45%;
+    max-width: 50%;
     margin-left: auto;
     margin-right: auto;
 
@@ -12,14 +12,12 @@ body {
 }
 
 address ul {
-    list-style: none;
-    list-style-position: inside;
+    list-style: none inside;
     padding-left: 0;
 }
 
 nav ul {
-    list-style: none;
-    list-style-position: inside;
+    list-style: none inside;
     padding-left: 0;
 }
 
@@ -31,3 +29,11 @@ nav ul > li {
 main p {
     line-height: 20px;
 }
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10%;
+    max-width: fit-content;
+}
+
