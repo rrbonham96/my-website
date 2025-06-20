@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="center">
+    <h1>Alice Ryder</h1>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">About</a>
+        </li>
+        <li>
+          <a href="skills.html">Skills</a>
+        </li>
+        <li>
+          <a href="experience.html">Experience</a>
+        </li>
+        <li>
+          <a href="projects.html">Projects</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h2>Contact</h2>
+    <address>
+      <ul>
+        <li>Email: rrbonham96@gmail.com</li>
+        <li>Phone: (316) 978-0177</li>
+        <li>Location: Portland, OR Metro Area</li>
+        <li>
+          <a href="https://www.linkedin.com/in/alice-ryder" target="_blank">
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </address>
+  </header>
+
+  <hr>
+
+  <main class="center">
+    <h2>Projects</h2>
+
+    <p>Here are just a few of the projects I've worked on over the years.</p>
+
+    <section>
+      <h3>Senior Project - Wireless Stopwatch</h3>
+      <p>
+        The wireless stopwatch I worked on with my senior project team was intended
+        to assist swimming coaches in timing young swimmers. According to our sponsor,
+        the coaches always used a manual stopwatch as a backup for when the swimmers 
+        did not have enough force to press the pressure plate in the pool when switching 
+        back. The wireless part was to assist in noting down the times.
+      </p>
+      <p>
+        The project itself included the stopwatch hardware, the embedded 
+        software on it, and a receiver desktop application with a GUI to
+        display and record times.
+      </p>
+      <p>
+        I primarily worked on the wireless communication between the device and the
+        desktop app. For the wireless transmission protocol we chose LoRa, which is 
+        commonly used in IoT devices, because bluetooth did not give us the range
+        capabilities that we needed. However, this decision brought some difficulty with it.
+      </p>
+      <p>
+        LoRa is usually used with a protocol on top of it called LoRaWAN and a specialized 
+        router-like device to handle TX/RX for a network of devices, but we did not have the 
+        budget for one of these. Instead, I had to figure out the low-level details of the 
+        LoRa protocol and radio communication in general in order for the devices to 
+        communicate.
+      </p>
+      <p>
+        I did eventually get it working with a LoRa USB dongle we tried out called a LoStik,
+        but one unresolved issue we ran into was implementing multi-device support. For this
+        we would have to develop CSMA/CA, but we simply did not have the time or resources 
+        to do so.
+      </p>
+      <p>
+        Overall the project was a great experience for learning about embedded software and 
+        low-level radio communication that I would otherwise be oblivious to.
+      </p>
+    </section>
+
+    <section>
+      <h3>Volunteering - Maize Elementary STEAM day</h3>
+      <p>
+        One of the requirements for graduating from a STEM degree at my university was 
+        completing some volunteer work related to your field of study. For mine, I worked with 
+        three other students to create an activity for a local elementary school's STEAM 
+        (Science, Technology, Engineering, Art, Math) day that took place in their gym.
+      </p>
+      <p>
+        One resource the school had access to was these little robot toys (Dash) that could be 
+        programmed over bluetooth with an app based largely around the Scratch programming 
+        language (Blockly). I had the opportunity to take one home and create a quick activity which 
+        involved programming the robot to follow a known path on the ground and documenting it 
+        for future teacher use.
+      </p>
+      <p>
+        On the STEAM day it was very interesting to see how the different grade levels interacted 
+        with the activity. For Kindergarten up to around second grade, we had to assist the students 
+        with setting up and running the robots quite a bit. There was a lot of confusion about what 
+        angles were for them. From third grade onwards, though, the students were very curious and 
+        experimenting with what they could do with the robots.
+      </p>
+      <p>
+        Overall it was a really great experience, and I got a chance to learn how technology can 
+        interface with education.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="center">
+
+  </footer>
+</body>
+</html>
